@@ -6,7 +6,7 @@
 pip -r requirements.txt
 ```
 
-## Buld Production
+## Build Production
 ```shell
 pyinstaller -F --icon=icon.ico --add-data 'public_suffix_list.dat;whois/data/' main.py
 pyarmor gen --pack dist/main.exe main.py 
