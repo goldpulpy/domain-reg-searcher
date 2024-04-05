@@ -1,14 +1,17 @@
 ## Описание приложения
-Инструмент для поиска домена под регистрацию для комерческих компаний и индивидуальных предпринимателей.
+Инструмент для поиска домена под регистрацию.
 
 ## Установка
 ```shell
+python -m venv .venv
+source .venv/bin/activate
+
 pip -r requirements.txt
 ```
 
-## Build Production
-```shell
-pyinstaller -F --icon=icon.ico --add-data 'public_suffix_list.dat;whois/data/' main.py
-pyarmor gen --pack dist/main.exe main.py 
+## Запуск
 
+```shell
+python main.py
 ```
+
